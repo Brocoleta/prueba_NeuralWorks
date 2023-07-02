@@ -18,6 +18,10 @@
 
 ## Pregunta 1
 
+Nose si se referian a los modelos iniciales o al GV Grid del XGBoost y Upsampling, si se referian a lo primero, me sale que los
+dos modelos tienen las mismas metricas, pero se que XGBoost al ser de tipo arbol, se comporta mejor en datasets inbalanceados
+que una Regresion Logistica. Por otro lado si se referian a lo segundo, prefiero el modelo de Upsampling, ya que tiene mas True Positives , es decir podemos detectar mas vuelos atrasados realmente
+
 ## Pregunta 2
 
 Las respuestas se encuentran en Respuestas_NeuralWorks.ipynb, al final, en la seccion Respuestas.
