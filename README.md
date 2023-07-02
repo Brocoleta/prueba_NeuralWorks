@@ -4,7 +4,7 @@
 
 - La mayoria de la información acerca de las decisiones tomadas se encuentra en el colab, pero en resumen, asumi que al ser un
   problema donde se busca predecir los vuelos que se atrasaron, lo mas importante son los True Positives, por lo que busque
-  maximizar estos y el recall, debido a que si yo digo que el vuelo no se atraso y no es real, no es grave solo hay que esperar, pero
+  maximizar estos y el recall, asi como erl ROC AUC Score, debido a que si yo digo que el vuelo no se atraso y no es real, no es grave solo hay que esperar, pero
   si digo que el vuelo se atraso y en verdad no esta atrasado, podria perder el vuelo, por lo que lo importante es que esto no pase,
   logre hacer que haya un 81% de True Positives, lo cual es mucho mejor que el 3% inicial.
 - Asumi tambien que como es un set imbalanceado, el accuracy de 82% inicial "no es real", ya que esto pasa por que la clase 0 representa el 82% de los datos, por lo que si tiro todas las predicciones a esa clase tengo un accuracy alto, pero no es representativo, por eso mismo ocupe el recall como metrica.
