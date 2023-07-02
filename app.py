@@ -16,9 +16,12 @@ def predict():
 
     with open('features.json', 'r') as archivo:
         with open('vuelos_en_hora.json', 'r') as vuelos_en_hora:
+
             features = json.load(archivo)
             vuelos_en_hora = json.load(vuelos_en_hora)
+            
             input = request.json
+
             input['periodo_dia'] = get_periodo_dia(input['Fecha-I'])
             input['fecha_hora'] = sacar_hora(
                 datetime.strptime(input['Fecha-I'], '%Y-%m-%d %H:%M:%S'))
