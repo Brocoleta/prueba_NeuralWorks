@@ -22,7 +22,6 @@ def predict():
             input['periodo_dia'] = get_periodo_dia(input['Fecha-I'])
             input['fecha_hora'] = sacar_hora(
                 datetime.strptime(input['Fecha-I'], '%Y-%m-%d %H:%M:%S'))
-            print(input['fecha_hora'])
             try:
                 input['horas_contadas'] = vuelos_en_hora[input['fecha_hora']]
             except Exception as e:
